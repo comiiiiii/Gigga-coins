@@ -84,20 +84,7 @@
     #star-drop.shake {
       animation: shake 0.1s ease-in-out; /* Shake effect */
     }
-    if (holdDuration < rewardTimes[rewardType]) {
-      starDropButton.classList.add('shake'); // Apply shake animation
-      rewardMessage.textContent = 'You released too early!';
-      rewardDisplayed = true;
-      isGameActive = false;
-      setTimeout(() => {
-        starDropButton.classList.remove('shake'); // Remove shake after animation completes
-      }, 300); // Duration of shake animation
-    }
-    rewardMessage.classList.add('show');
-    @keyframes zoomIn {
-      0% { transform: scale(0); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
-    }
+   
     
     #reward-message {
       animation: zoomIn 0.5s ease-out; /* Zoom-in effect */
